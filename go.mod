@@ -14,9 +14,9 @@ require (
 	github.com/containers/buildah v1.16.5
 	github.com/containers/common v0.26.0
 	github.com/containers/conmon v2.0.20+incompatible
-	github.com/containers/image/v5 v5.6.0
+	github.com/containers/image/v5 v5.7.0
 	github.com/containers/psgo v1.5.1
-	github.com/containers/storage v1.23.5
+	github.com/containers/storage v1.23.6
 	github.com/coreos/go-systemd/v22 v22.1.0
 	github.com/cri-o/ocicni v0.2.0
 	github.com/cyphar/filepath-securejoin v0.2.2
@@ -52,7 +52,7 @@ require (
 	github.com/pmezard/go-difflib v1.0.0
 	github.com/rootless-containers/rootlesskit v0.10.1
 	github.com/sirupsen/logrus v1.7.0
-	github.com/spf13/cobra v1.1.0
+	github.com/spf13/cobra v1.1.1
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/objx v0.2.0 // indirect
 	github.com/stretchr/testify v1.6.1
@@ -75,3 +75,7 @@ require (
 	k8s.io/apimachinery v0.19.3
 	k8s.io/client-go v0.0.0-20190620085101-78d2af792bab
 )
+
+replace github.com/containers/common => github.com/rhatdan/common v0.10.1-0.20201024090141-ce61b27a6ad8
+
+replace github.com/containers/storage => github.com/rhatdan/storage v1.15.8-0.20201023201911-a1e6151b712b
